@@ -1,0 +1,34 @@
+body {
+    display: flex;  /*facilita la alineación y disposición de los elementos dentro de este contenedor.*/
+    justify-content: center; /*Esta propiedad alinea los bloques <div> desde izquierda a derecha */
+    align-items: center; /*centro desde arriba hacia abajo.*/
+
+
+    height: 100vh; /*ocupará toda la altura visible del navegador*/
+    margin: 0;  /*elimina el margen predeterminado*/
+    background-color: #f0f0f0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.red {
+    background-color: red;
+    top: 50px;
+    left: 50px;
+}
+
+.blue {
+    background-color: blue;
+    top: 100px;
+    left: 100px;
+}
+
+.green {
+    background-color: green;
+    top: 150px;
+    left: 150px;
+}

@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e6f7ff; /* Fondo celeste claro */
+}
+
+.calculadora {
+    width: 290px; /* Tamaño más grande */
+    border: 2px solid #99ccff; /* Borde celeste claro */
+    border-radius: 10px;
+    background-color: #b3e0ff; /* Color de fondo de la calculadora */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    width: calc(100% - 22px); /* Ajustado para el padding */
+    height: 70px;
+    font-size: 2em;
+    text-align: right;
+    border: 2px solid #99ccff; /* Borde celeste claro */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+table {
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho */
+    border-collapse: collapse; /* Elimina el espacio entre las celdas */
+}
+
+td {
+    padding: 0; /* Elimina el padding de las celdas */
+}
+
+button {
+    width: 70px; /* Botones más grandes */
+    height: 70px;
+    font-size: 1.5em;
+    border: 2px solid #99ccff; /* Borde celeste claro */
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #81befa; /* Color de fondo cuando se pasa el cursor */
+}

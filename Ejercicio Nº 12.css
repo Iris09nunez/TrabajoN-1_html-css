@@ -1,0 +1,69 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: "book antigua", sans-serif;
+}
+
+/* Barra de navegación fija */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    z-index: 1000;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+/* Secciones */
+.section {
+    width: 100%;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    min-height: calc(100vh - 60px); /* Ajusta la altura mínima considerando solo la barra de navegación */
+}
+
+.section:nth-of-type(1) {
+    background-color: #fd53f8;
+}
+
+.section:nth-of-type(2) {
+    background-color: #78fd50;
+}
+
+.section:nth-of-type(3) {
+    background-color: #edf949;
+    min-height: 100px; /* Altura fija para la sección 3, actuando como un pie de página */
+    padding: 20px; 
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}

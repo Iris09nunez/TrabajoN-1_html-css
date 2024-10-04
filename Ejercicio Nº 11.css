@@ -1,0 +1,60 @@
+body {
+    font-family: "book antigua", sans-serif; /*fuente principal del texto en el body con una fuente de respaldo.*/
+    background-color: #c1b7fa; /*color de fondo al cuerpo de la página.*/
+    padding: 40px; /*relleno de 40 píxeles alrededor del contenido del body.*/
+}
+
+h1 {
+    text-align: center;
+    color: #62048d;
+    font-family: "book antigua", serif; /* Cambiar fuente del título */
+}
+
+form {
+    background-color: #fff; /* Define un color de fondo blanco para el formulario. */
+    padding: 20px;  /* Añade un relleno interno de 20 píxeles dentro del formulario.*/
+    border-radius: 8px; /* Redondea las esquinas del formulario con un radio de 8 píxeles.*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aplica una sombra sutil alrededor del formulario para darle un efecto de elevación.*/
+    max-width: 500px; /* Limita el ancho máximo del formulario a 500 píxeles.*/
+    margin: auto; /* Centra el formulario horizontalmente dentro de su contenedor */
+}
+
+label {
+    display: block; /*etiquetas ocupan toda la línea disponible y empujando los elementos siguientes hacia abajo.*/
+    margin-bottom: 8px; /* Añade un margen inferior de 8 píxeles para separar las etiquetas de los elementos de formulario que están debajo. */
+    color: #555; /* Establece un color de texto gris oscuro para las etiquetas. */
+}
+
+input[type="text"], /* Centra el formulario horizontalmente dentro de su contenedor */
+input[type="email"],
+input[type="radio"],
+input[type="checkbox"] {
+    margin-bottom: 10px; /* margen inferior de 10 píxeles a todos los input, creando espacio entre ellos y los elementos que están debajo. */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: calc(100% - 20px); /*ancho de los campos de texto y email para que ocupen el 100% del ancho del contenedor menos 20 píxeles */
+    padding: 8px; /*Añade un relleno de 8 píxeles dentro del campo de entrada.*/
+    border: 1px solid #ccc; /*Define un borde de 1 píxel de ancho, sólido y de color gris claro para los campos de entrada.*/
+    border-radius: 4px; /*Redondea las esquinas de los campos de entrada con un radio de 4 píxeles.*/
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px; /* margen derecho de 10 píxeles para separar los botones deradio y checkbox */
+}
+
+button {
+    width: 100%; /* botón ocupe todo el ancho disponible del contenedor. */
+    padding: 10px; /* relleno interno de 10 píxeles dentro del botón. */
+    background-color: #007BFF; /* Establece un color de fondo para el botón. */
+    color: #fff; /* Define el color del texto del botón en blanco. */
+    border: none; /* Elimina el borde predeterminado del botón. */
+    border-radius: 4px; /* Redondea las esquinas del botón con un radio de 4 píxeles. */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el botón, indicando que es clickeable. */
+}
+
+button:hover {
+    background-color: #0056b3;  /*Cambia el color de fondo del botón a un azul más oscuro cuando el cursor está sobre él  */
+}

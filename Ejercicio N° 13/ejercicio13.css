@@ -1,0 +1,88 @@
+/*
+Tarea de posicionamiento con CSS. Todo el trabajo debe hacerse en este archivo
+*/
+
+#ejercicioUno {
+    display: block; /* Se muestra como bloque */
+    text-align: center; /* Centra el texto */
+}
+
+#ejercicioDos {
+    display: none; /* Oculta la caja con id 'ejercicioDos' */
+}
+
+#containerImagen {
+    display: flex;  
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;      /* Centra verticalmente */
+    margin-top: 20px;         
+    margin-left: auto;        
+    margin-right: auto;       
+    border: 5px solid #3574d2; /* Borde azul del contenedor */
+    background-color: #bdd6fc; /* Fondo del contenedor */
+    position: relative;       /* Para permitir posicionamiento absoluto de hijos */
+}
+
+#ejercicioTres {
+    position: absolute;  /* Permite posicionar este elemento en coordenadas específicas */
+    top: 100px;          /* 100px desde el borde superior */
+    left: 200px;         /* 200px desde el borde izquierdo */
+}
+
+#ejercicioCuatro {
+    position: fixed;     /* Se mantiene fijo en la pantalla al hacer scroll */
+    top: 0;              /* Posiciona en la parte superior de la página */
+    left: 0;             /* Posiciona al inicio del lado izquierdo */
+}
+
+#ejercicioCinco {
+    display: flex;                   /* Activa flexbox para alinear elementos dentro */
+    flex-direction: row-reverse;     /* Cambia el orden de los elementos */
+    justify-content: space-between;  /* Distribuye espacio entre los elementos */
+    align-items: center;             /* Alinea verticalmente al centro */
+    height: 100%;                    /* Contenedor ocupa toda la altura disponible */
+}
+
+#ejercicioSiete {
+    margin-left: auto;                /* Centra el contenedor horizontalmente */
+    margin-right: auto;               /* Centra el contenedor horizontalmente */
+    border: 3px solid black;          /* Borde del contenedor */
+    position: relative;               /* Permite que los elementos hijos se posicionen en relación a este contenedor */
+    background-color: black;          /* Color de fondo del contenedor */
+    display: flex;                    /* Activa flexbox */
+    flex-direction: row;              /* Dirección de los elementos en fila */
+    justify-content: space-between;    /* Distribuye espacio entre los elementos */
+    align-items: center;               /* Alinea todos los elementos al centro */
+}
+
+#elementoUno {
+    background-color: red;            /* Color de fondo */
+    color: white;                     /* Color del texto */
+    padding: 10px;                   /* Espaciado interno */
+    align-self: flex-start;           /* Posiciona este elemento al inicio */
+    border: none;                     /* Elimina el borde del elemento */
+}
+
+#elementoDos {
+    background-color: rgb(4, 210, 4); /* Color de fondo */
+    color: white;                     /* Color del texto */
+    padding: 10px;                   /* Espaciado interno */
+    align-self: center;               /* Centra este elemento verticalmente */
+    border: none;                     /* Elimina el borde del elemento */
+}
+
+#elementoTres {
+    background-color: blue;           /* Color de fondo */
+    color: white;                     /* Color del texto */
+    padding: 10px;                   /* Espaciado interno */
+    align-self: flex-end;             /* Posiciona este elemento al final */
+    border: none;                     /* Elimina el borde del elemento */
+}
+
+#elementoCuatro {
+    background-color: orange;         /* Color de fondo */
+    color: white;                     /* Color del texto */
+    padding: 10px;                   /* Espaciado interno */
+    align-self: flex-start;           /* Cambia la posición del elemento */
+    border: none;                     /* Elimina el borde del elemento */
+}
